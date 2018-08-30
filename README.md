@@ -59,6 +59,17 @@ Para instalar é necessário adicionar o jar ao projeto e realizar as seguintes 
     }
 ```
 
+    3 - Para utilizar o AuthenticationUtil basta criar um bean retornando new AuthenticationUtil();
+    
+ ```javascript
+ 
+    @Bean
+	public AuthenticationUtil getAuthenticationUtil() {
+		return new AuthenticationUtil();
+	}
+    
+ ```
+
 Configurações importantes para o application.properties:
 
     1 - seia.resource.client-id=<client_id>
