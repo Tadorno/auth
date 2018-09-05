@@ -77,6 +77,9 @@ Configurações importantes para o application.properties:
     3 - seia.resource.check-token-url=<auth-server>/oauth/check_token
     4 - security.security-realm=<nome do Realm>
     5 - security.signing-key=<chave para assinatura>
+    
+ Protegendo endpoints:
+ Para proteger os endpoints basta adicionar a anotação @PreAuthorize("hasAuthority('[Permissão]')")
 
 # Instalação Wildfly
     1. Baixa e descompactar o Wildfly na pasta desejada
